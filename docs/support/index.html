@@ -6,18 +6,126 @@
   <meta name="apple-itunes-app" content="app-id=6760481136" />
   <title>Morning and Evening — Support</title>
   <style>
-    body { font-family: -apple-system, Arial, sans-serif; line-height: 1.6; margin: 60px auto; max-width: 700px; padding: 0 24px; color: #333; }
-    h1 { font-size: 1.9rem; border-bottom: 2px solid #eee; padding-bottom: 12px; }
-    h2 { font-size: 1.15rem; margin-top: 2rem; color: #222; }
-    a { color: #007aff; }
-    .contact { background: #f7f7f7; padding: 16px; border-radius: 8px; margin-top: 8px; }
-    footer { margin-top: 48px; font-size: 0.85em; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #060e0c;
+      --bg2:      #0c1a15;
+      --teal:     #00d4a0;
+      --teal-dim: #00a87f;
+      --white:    #f0f5f3;
+      --muted:    #7aa89a;
+      --radius:   1rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      width: 100%;
+      padding: 0.65rem 1.25rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: rgba(6, 14, 12, 0.92);
+      border-bottom: 1px solid rgba(0, 212, 160, 0.12);
+    }
+    .site-header a {
+      color: var(--teal-dim);
+      text-decoration: none;
+    }
+    .site-header a:hover { color: var(--teal); }
+
+    /* ── CONTENT ── */
+    .wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      color: var(--white);
+      border-bottom: 1px solid rgba(0, 212, 160, 0.2);
+      padding-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      color: var(--teal);
+      margin-top: 2.25rem;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    p { color: #c8d8d2; margin-bottom: 0.5rem; }
+
+    a { color: var(--teal-dim); text-decoration: none; }
+    a:hover { color: var(--teal); }
+
+    .contact-box {
+      background: var(--bg2);
+      border: 1px solid rgba(0, 212, 160, 0.15);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    .faq-item {
+      background: var(--bg2);
+      border: 1px solid rgba(0, 212, 160, 0.1);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-item p { margin: 0; }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(0, 212, 160, 0.1);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
 
+<header class="site-header">
+  &copy; 2026 Heisforyou &nbsp;·&nbsp;
+  <a href="mailto:travisprefersdosequis@gmail.com">Contact</a>
+  &nbsp;·&nbsp;
+  <a href="../index.html">Marketing Site</a>
+  &nbsp;·&nbsp;
+  <a href="./privacy.html">Privacy Policy</a>
+</header>
+
+<div class="wrap">
+
   <h1>Morning and Evening</h1>
-  <p>A daily audio devotional based on the classic work by Charles H. Spurgeon, featuring 366 morning and 366 evening readings for every day of the year.</p>
+  <p class="subtitle">A daily audio devotional based on Charles H. Spurgeon's classic work, featuring 366 morning and 366 evening readings for every day of the year.</p>
 
   <h2>Get the app</h2>
   <p>
@@ -26,24 +134,32 @@
   </p>
 
   <h2>Contact Support</h2>
-  <div class="contact">
+  <div class="contact-box">
     <p>For questions or assistance, email us at:<br/>
     <a href="mailto:travisprefersdosequis@gmail.com">travisprefersdosequis@gmail.com</a></p>
   </div>
 
   <h2>Frequently Asked Questions</h2>
 
-  <p><strong>Audio does not play when I tap the button.</strong><br/>
-  Make sure your device is not on silent/mute. On the very first launch, the current month's audio downloads in the background — please allow a moment and try again.</p>
+  <div class="faq-item">
+    <strong>Audio does not play when I tap the button.</strong>
+    <p>Make sure your device is not on silent/mute. On the very first launch, the current month's audio downloads in the background — please allow a moment and try again.</p>
+  </div>
 
-  <p><strong>The app shows a white screen on launch.</strong><br/>
-  This is normal on the first launch while the app prepares audio content. Subsequent launches are much faster.</p>
+  <div class="faq-item">
+    <strong>The app shows a white screen on launch.</strong>
+    <p>This is normal on the first launch while the app prepares audio content. Subsequent launches are much faster.</p>
+  </div>
 
-  <p><strong>How much storage does the app use?</strong><br/>
-  Audio files are delivered as on-demand resources and are downloaded in the background over time. Only the current month's audio (~130 MB) is needed to start using the app.</p>
+  <div class="faq-item">
+    <strong>How much storage does the app use?</strong>
+    <p>Audio files are delivered as on-demand resources and are downloaded in the background over time. Only the current month's audio (~130 MB) is needed to start using the app.</p>
+  </div>
 
-  <p><strong>Can I use the app offline?</strong><br/>
-  Yes — once a month's audio has been downloaded, it plays without an internet connection.</p>
+  <div class="faq-item">
+    <strong>Can I use the app offline?</strong>
+    <p>Yes — once a month's audio has been downloaded, it plays without an internet connection.</p>
+  </div>
 
   <h2>Privacy Policy</h2>
   <p>We do not collect, sell, or share personal data. See our full <a href="./privacy.html">Privacy Policy</a>.</p>
@@ -52,5 +168,6 @@
     &copy; 2026 Morning and Evening Devotional. The text of Charles H. Spurgeon's <em>Morning and Evening</em> is in the public domain.
   </footer>
 
+</div>
 </body>
 </html>
