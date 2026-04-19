@@ -105,6 +105,18 @@
 
     .faq-item p { margin: 0; }
 
+    .badge-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .badge-row a { display: inline-block; line-height: 0; transition: opacity 0.15s; }
+    .badge-row a:hover { opacity: 0.8; }
+    .badge-row img { height: 48px; }
+
     footer {
       margin-top: 4rem;
       padding-top: 1.25rem;
@@ -131,10 +143,14 @@
   <p class="subtitle">A daily audio devotional based on Charles H. Spurgeon's classic work, featuring 366 morning and 366 evening readings for every day of the year.</p>
 
   <h2>Get the app</h2>
-  <p>
-    <a href="https://apps.apple.com/app/id6760481136">Download on the App Store (iPhone)</a><br/>
-    <a href="https://play.google.com/store/apps/details?id=com.tkirk.morning_and_evening_app">Get it on Google Play (Android)</a>
-  </p>
+  <div class="badge-row">
+    <a href="https://apps.apple.com/app/id6760481136" target="_blank" rel="noopener">
+      <img src="../assets/app-store-badge.svg" alt="Download on the App Store" />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.tkirk.morning_and_evening_app" target="_blank" rel="noopener">
+      <img src="../assets/google-play-badge.svg" alt="Get it on Google Play" />
+    </a>
+  </div>
 
   <h2>Contact Support</h2>
   <div class="contact-box">
