@@ -313,7 +313,7 @@
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
       margin-top: 3rem;
     }
@@ -377,12 +377,17 @@
     footer a { color: var(--teal-dim); text-decoration: none; }
     footer a:hover { color: var(--teal); }
 
+    @media (max-width: 800px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 600px) {
       .screenshot-card img,
       .shot-slot,
       .preview-scroll-media { height: 380px; }
       .shot-slot { width: 180px; }
       .hero-icon { width: 90px; height: 90px; }
+      .features-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
