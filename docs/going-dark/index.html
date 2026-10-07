@@ -210,7 +210,7 @@
 
     .screenshot-card img {
       display: block;
-      height: 520px;
+      height: 460px;
       width: auto;
       border-radius: var(--radius);
     }
@@ -428,24 +428,23 @@
 <section id="gallery">
   <span class="section-label">See It In Action</span>
   <h2 class="section-title">Hide the games you want. The rest stay live.</h2>
-  <p class="section-desc">Screenshots and short previews will go here once they are captured from the app.</p>
+  <p class="section-desc">Browse the screenshots, or switch over for short previews once they are recorded.</p>
 
   <div class="mockup-toggle">
     <button class="toggle-btn active" onclick="showGallery('screenshots', this)">Screenshots</button>
     <button class="toggle-btn" onclick="showGallery('previews', this)">App Previews</button>
   </div>
 
-  <!--
-    Replace a slot with:
-    <div class="screenshot-card"><img src="assets/screenshots/01.png" alt="League selection" /></div>
-    Drop the image in assets/screenshots/.
-  -->
   <div id="gallery-screenshots" class="gallery visible">
     <div class="screenshot-grid">
-      <div class="shot-slot"><span>01</span><strong>League selection</strong>In-season leagues first.</div>
-      <div class="shot-slot"><span>02</span><strong>Games hidden</strong>Scores, clocks, and status redacted.</div>
-      <div class="shot-slot"><span>03</span><strong>Hidden games</strong>The games you are saving for later.</div>
-      <div class="shot-slot"><span>04</span><strong>Settings</strong>Colors and league order.</div>
+      <div class="screenshot-card"><img src="assets/screenshots/01.jpg" alt="League list. It's all here." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/02.jpg" alt="Hide any score and watch later." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/03.jpg" alt="Confirm before a game goes dark." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/04.jpg" alt="One game hidden while the rest stay live." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/05.jpg" alt="Reveal a hidden score on demand." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/06.jpg" alt="Confirm before revealing a score." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/07.jpg" alt="Highlighter, sport colors, and league order." loading="lazy" /></div>
+      <div class="screenshot-card"><img src="assets/screenshots/08.jpg" alt="Track the games that stay live." loading="lazy" /></div>
     </div>
   </div>
 
