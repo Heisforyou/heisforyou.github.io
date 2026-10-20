@@ -112,6 +112,15 @@
       margin-bottom: 0.25rem;
     }
 
+    .badge-row a {
+      display: inline-block;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .badge-row a:hover { transform: translateY(-2px); opacity: 0.85; }
+
+    .badge-row img { height: 48px; }
+
     .badge-placeholder {
       height: 48px;
       padding: 0 1.2rem;
@@ -153,7 +162,9 @@
 
   <h2>Get the app</h2>
   <div class="badge-row">
-    <span class="badge-placeholder">App Store · Coming soon</span>
+    <a href="https://apps.apple.com/us/app/going-dark/id6820195062" target="_blank" rel="noopener" title="Download on the App Store">
+      <img src="../../assets/app-store-badge.png" alt="Download on the App Store" />
+    </a>
     <span class="badge-placeholder">Google Play · Coming soon</span>
   </div>
 
